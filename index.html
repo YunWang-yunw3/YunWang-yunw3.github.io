@@ -1,85 +1,327 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>Yun (Tiger) Wang</title>
-  </head>
-  <body>
-    <h1>Intro</h1>
-    <p>I do research in Autonomous Systems, Interactive Computing, and CS Education. I do startups in those areas.</p>
-    <h2>Contact Me</h2>
-    <p>Phone: 4439835575</p>
-    <p>Email: yunwangt@gmail.com</p>
-    <p>LinkedIn: <a href="linkedin.com/in/tiger-wang-348054174" target="_blank">My LinkedIn</a></p>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tiger Wang</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-      h1 {
-        margin: 0;
-        font-size: 36px;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .intro {
-        font-size: 24px;
-        line-height: 1.5;
-        margin-bottom: 40px;
-      }
-      .contact {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-      a {
-        color: #333;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #666;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Tiger Wang</h1>
-    </header>
-    <div class="container">
-      <section>
-        <h2>About Me</h2>
-        <p class="intro">I do research in Autonomous Systems, Interactive Computing, and CS Education. I do startups in those areas.</p>
-      </section>
+   <head>
+      <title>Yun Wang (Tiger)</title>
+      <link rel="icon" type="image/x-icon" href="logo-dark.svg">
+      <style>
+         :root{
+            --text-left-padding: 36px;
+            --heading-text-font: 'Merriweather', serif;
+            /* --content-text-font: 'ArchitectsDaughter-Regular', serif; */
+            /* --content-text-font: 'Sniglet', serif; */
+            --content-text-font: 'Merriweather-Light';
+            --highlight-text-font: 'Merriweather-LightItalic';
+         }
+         /* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"); */
+         /* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap'); */
+         /* @font-face {
+            font-family: 'Sniglet';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Sniglet Regular'), local('Sniglet-Regular'), url('Sniglet-Regular.ttf') format('truetype');
+         } */
+         @font-face {
+            font-family: Merriweather;
+            font-weight: 400;
+            src: url('Merriweather-Regular.ttf') format('truetype');
+         }
+         @font-face {
+            font-family: Merriweather-LightItalic;
+            src: url('Merriweather-LightItalic.ttf') format('truetype');
+         }
+         @font-face {
+            font-family: Merriweather-Light;
+            src: url('Merriweather-Light.ttf') format('truetype');
+         }
+         /* @font-face {
+            font-family: ArchitectsDaughter-Regular;
+            src: url('ArchitectsDaughter-Regular.ttf') format('truetype');
+         } */
+         body {
+            /* font-family: Arial, sans-serif; */
+            /* font-family: 'Sniglet', serif; */
+            /* font-family: 'Times New Roman', Times, serif; */
+            /* font-family: 'Merriweather', serif; */
+            /* font-family: "Signifier", ui-serif, Georgia, Cambria, Times New Roman, Times, serif; */
+            background-color: #f2f2f2;
+            /* height: 100%; */
+            /* width: 100%; */
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+         }
+         header {
+            font-family: var(--heading-text-font);
+            font-size: 26px;
+            letter-spacing: -.1rem;
+            word-spacing: 0.5rem;
+            color: #322;
+            padding-left: var(--text-left-padding);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            /* z-index: 1; */
+            /* text-align: justify; */
+         }
+         .personal-info {
+            font-family: var(--content-text-font);
+            font-size: 20px;
+            letter-spacing: -.05rem;
+            line-height: 0.5;
+         }
+
+
+         /* content */
+         section {
+            /* background-color: #e9c46a; */
+            /* background-color: rgba(233, 196, 106, 0.8); */
+            /* background-color: #f2f2f2f0; */
+            /* margin: 0 auto; */
+            width: 72%;
+            max-width: 1080px;
+            padding-left: var(--text-left-padding);
+            padding-right: var(--text-left-padding);
+            margin-top: 20vh;
+            border-radius: 10px;
+            z-index: 10;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            text-align: justify;
+         }
+         @media (max-width: 600px) {
+            h2 {
+               margin: 0;
+               font-family: var(--heading-text-font);
+               letter-spacing: -.05rem;
+               font-size: 26px;
+               padding-top: 10px;
+               border-top: 2px solid #322;
+            }
+            .content {
+               font-family: var(--content-text-font);
+               font-size: 16px;
+               letter-spacing: -.05rem;
+               line-height: 1.1;
+            }
+         }
+         @media (min-width: 601px) {
+            h2 {
+               margin: 0;
+               font-family: var(--heading-text-font);
+               letter-spacing: -.05rem;
+               word-spacing: 0.5rem;
+               font-size: 30px;
+               padding-top: 12px;
+               border-top: 2px solid #322;
+            }
+            .content {
+               width: 80%;
+               font-family: var(--content-text-font);
+               font-size: 20px;
+               word-spacing: 0.5rem;
+               letter-spacing: -.05rem;
+               line-height: 1.5;
+            }
+         }
+         a {
+            color: #322;
+            text-decoration: none;
+         }
+         a:hover {
+            color: #666;
+         }
+
+         .mouse {
+            /* background-color: #003566; */
+            background-color: rgba(0, 53, 102, 0.8);
+            position: fixed;
+            width: 12px;
+            height: 12px;
+            top: -30px;
+            left: -30px;
+            border-radius: 100%;
+            z-index: 100;
+         }
+         .uiuc_triangle_1 {
+            /* background-color: rgba(13, 33, 161); */
+            background-color: #e74a27ff;
+            position: fixed;
+            width: 180px;
+            height: 70vh;
+            top: 0px;
+            right: 4vw;
+            /* background-color: linear-gradient(transparent 0px, transparent 30px, rgba(0, 53, 102, 0.8) 30px, rgba(0, 53, 102, 0.8) 60px, transparent 60px, transparent 90px); */
+            /* transform: rotate(-35deg); */
+            z-index: -3;
+         }
+         .uiuc_triangle_2 {
+            /* background-color: #141414; */
+            background-color: #002855ff;
+            position: fixed;
+            width: 180px;
+            height: 30vh;
+            top: 70vh;
+            right: 4vw;
+            /* background-color: linear-gradient(transparent 0px, transparent 30px, rgba(0, 53, 102, 0.8) 30px, rgba(0, 53, 102, 0.8) 60px, transparent 60px, transparent 90px); */
+            /* transform: rotate(-35deg); */
+            z-index: -3;
+         }
+         .geni_triangles {
+            position: fixed;
+            width: 60px;
+            height: 100vh;
+            top: -40vh;
+            right: 38vw;
+            transform: rotate(-65deg);
+            z-index: -2;
+         }
+         .geni_triangle_1 {
+            /* background-color: #eef0f2; */
+            /* background-color: #f2f2f2; */
+            background-color: #FFD60A;
+            /* position: fixed; */
+            width: 60px;
+            height: 30vh;
+            top: -10vh;
+            right: 20vw;
+            /* transform: rotate(-24deg); */
+            /* z-index: -2; */
+         }
+         .geni_triangle_2 {
+            background-color: #000814;
+            /* position: fixed; */
+            width: 60px;
+            height: 100vh;
+            top: 30vh;
+            right: 20vw;
+            /* transform: rotate(-24deg); */
+            /* z-index: -3; */
+         }
+         /* mark {
+            font-family: var(--highlight-text-font);
+            background-color: #f2f2f2f0;
+         }
+         mark:hover {
+            background-color: #000814;
+            color: #000;
+         } */
+         mark {
+            font-family: var(--highlight-text-font);
+            background-color: #f2f2f2f0;
+            background-image: linear-gradient(to right, #f2f2f2f0 0%, #f2f2f2f0 50%, #000814 50%, #000814 100%);
+            background-size: 200% 100%;
+            transition: all 0.3s ease;
+         }
+         mark:hover {
+            background-position: -100% 0;
+            color: #f2f2f2;
+         }
+         p {
+            padding-top: 5px;
+            padding-bottom: 3px;
+         }
+
+
+
+         /* #projects {
+            margin-top: 10vh;
+         } */
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Yun Wang (Tiger)</h1>
+         <div class="personal-info">
+            <p>+1 (443)-983-5575 | yunwangt@gmail.com</p>
+            <p>
+               <a href="https://www.linkedin.com/in/tiger-wang-348054174/" target="_blank">LinkedIn </a>|
+               <a href="https://docs.google.com/document/d/1ijl5jj93Rdmb1aARbNAAUjphde6kowXIGDjg919-HXg/edit?usp=sharing" target="_blank">CV </a>|
+               <a href="https://www.youtube.com/@yunwang1243" target="_blank">YouTube </a>|
+               <a href="https://twitter.com/YunTWang" target="_blank">X</a>
+               <!-- <a href="https://www.linkedin.com/in/tiger-wang-348054174/" target="_blank">ASCEND</a>
+               <a href="https://www.linkedin.com/in/tiger-wang-348054174/" target="_blank">Geni</a> -->
+            </p>
+         </div>
+      </header>
+         <section>
+            <h2>About Me</h2>
+            <div class="content">
+               <p>I am a founder and researcher in <mark>Education</mark> and <mark>Autonomous AI</mark> (applying for grad schools). My passion is to create interpretable and accessibble <mark>Artificial General Intelligence</mark> that is not used for <mark>social engineering</mark>, <mark>mass propaganda</mark>, but the ellevation of mankind and truth.</p>
+               <p>My hobbies include philosophy, math, music, soccer, and gaming. Specifically, as a hobby, I ponder on things like <mark>"What is intelligence?"</mark>, <mark>"Does God Exist?"</mark>, distribution of primes, and music composition.</p>
+            </div>
+         </section>
+         <section id="projects">
+            <h2>Startups & Projects</h2>
+            <div class="content">
+               <p><a href="https://geni.zone" target="_blank">Geni - A startup offering personalized learning resources and smart school systems that is accessible and affordable to every teacher, student, and parent.</a></p>
+               <!-- <p><mark>ASCEND</mark> - A startup that aims to create a <mark>personalized learning</mark> platform that is <mark>accessible</mark> and <mark>affordable</mark> to everyone.</p> -->
+               <p><a href="https://" target="_blank">ASCEND - A UIUC-based general intelligence AI research lab.</a></p>
+            </div>
+         </section>
+         <section>
+            <h2>Publications</h2>
+            <div class="content">
+               <p><a href="https://docs.google.com/document/d/1ijl5jj93Rdmb1aARbNAAUjphde6kowXIGDjg919-HXg/edit?usp=sharing" target="_blank">CV </a></p>
+            </div>
+            <!-- <div class="content">
+               <p>Phone: 4439835575</p>
+               <p>Email: yunwangt@gmail.com</p>
+               <p>LinkedIn: <a href="https://www.linkedin.com/in/tiger-wang-348054174/" target="_blank">My LinkedIn</a></p>
+            </div> -->
+         </section>
+      <!-- <div class="mouse"></div> -->
+      <div class="uiuc_triangle_1"></div>
+      <div class="uiuc_triangle_2"></div>
+      <div class="geni_triangles">
+         <div class="geni_triangle_1"></div>
+         <div class="geni_triangle_2"></div>
+      </div>
+
+
+
       <!-- <section>
-        <h2>Blog</h2>
-        <ul>
-          <li><a href="#">Blog Post 1</a></li>
-          <li><a href="#">Blog Post 2</a></li>
-          <li><a href="#">Blog Post 3</a></li>
-        </ul>
+         <h2>Blog</h2>
+         <ul>
+            <li><a href="#">Blog Post 1</a></li>
+            <li><a href="#">Blog Post 2</a></li>
+            <li><a href="#">Blog Post 3</a></li>
+         </ul>
       </section> -->
-      <section>
-        <h2>Contact Me</h2>
-        <p class="contact">Phone: 4439835575</p>
-        <p class="contact">Email: yunwangt@gmail.com</p>
-        <p class="contact">LinkedIn: <a href="https://www.linkedin.com/in/tiger-wang-348054174/" target="_blank">My LinkedIn</a></p>
-      </section>
-    </div>
-  </body>
+   </body>
+
+   <script>
+      // const mouse = document.querySelector('.mouse');
+      // window.addEventListener('mousemove', (e) => {
+      //    mouse.style.left = e.pageX - 6 + 'px';
+      //    mouse.style.top = e.pageY - 6 + 'px';
+      // });
+
+
+
+
+
+
+      // // get window height
+      // const windowHeight = window.innerHeight;
+      // const uiuc_triangle_1 = document.querySelector('.uiuc_triangle_1');
+      // const uiuc_triangle_2 = document.querySelector('.uiuc_triangle_2');
+      // const geni_triangle_1 = document.querySelector('.geni_triangle_1');
+      // console.log(uiuc_triangle_1);
+      // console.log(uiuc_triangle_1.style.top);
+      // console.log(geni_triangle_1.style.top);
+      // const t_c1_t1_top = parseInt(uiuc_triangle_1.style.top.replace('px', ''));
+      // const t_c1_t2_top = parseInt(uiuc_triangle_2.style.top.replace('px', ''));
+      // const t_c1_t3_top = parseInt(geni_triangle_1.style.top.replace('px', ''));
+      // console.log(t_c1_t1_top);
+      // window.addEventListener('mousemove', (e) => {
+      //    // uiuc_triangle_1.style.left = e.pageX - 30 + 'px';
+      //    uiuc_triangle_1.style.top = (t_c1_t1_top + 1) % windowHeight + 'px';
+      //    // uiuc_triangle_2.style.left = e.pageX - 30 + 'px';
+      //    uiuc_triangle_2.style.top = (t_c1_t2_top + 1) % windowHeight + 'px';
+      //    // geni_triangle_1.style.left = e.pageX - 30 + 'px';
+      //    geni_triangle_1.style.top = (t_c1_t3_top + 1) % windowHeight + 'px';
+      // });
+   </script>
 </html>
